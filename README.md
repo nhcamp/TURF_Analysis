@@ -5,3 +5,5 @@ this code will enumerate through sets of unique identifiers to build a list of i
 reach of each additional feature. 
 
 This simple tool wasn't available elsewhere online so I put this together quickly for work use.
+
+It's important to note that this TURF is sub-optimal in a large and complex feature space. Because it evaluates each combination of features starting with the single largest reach, it will not account for situations where the feature of largest individual reach is NOT included in the mix. This doesn't happen in practice but is theoretically possible. In 99.9% of non-theoretical use cases, this method will give you the results you need.
